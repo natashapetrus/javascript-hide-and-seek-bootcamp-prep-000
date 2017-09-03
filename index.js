@@ -10,6 +10,9 @@ function nestedTarget(){
 
 function increaseRankBy(n){
   let match = document.getElementById('main').querySelectorAll('.ranked-list');
+  for (let i=0; i<match.length; i++){
+    match[i].innerHTML = parseInt(match[i].innerHTML) + n;
+  }
 }
 
 function deepestChild(){
